@@ -30,7 +30,8 @@ public class Square extends Solution{
             x2=Double.toString((-b-Math.sqrt(d))/(2*a));
         }
         else{
-            //COMPLEXNIE
+            x1="( "+(-b)+" + "+Math.sqrt(-d)+" * i ) / "+(2*a);
+            x2="( "+(-b)+" - "+Math.sqrt(-d)+" * i ) / "+(2*a);
         }
         setSolved(true);
     }
